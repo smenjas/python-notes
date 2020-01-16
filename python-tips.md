@@ -1,5 +1,10 @@
 # Python Tips
 
+## Use isinstance(), not type()
+type() only tells you the name of the class lowest in the hierarchy.
+isinstance() tells you whether the object inherits from the given class, so
+it works for child classes.
+
 ## List, set, and dictionary comprehensions
 ```python
 my_list = []
