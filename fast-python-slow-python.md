@@ -142,10 +142,10 @@ A2: What we're specializing for depends on what perspective we have. From
     author, your template works on some context that's got some data in it.
     I think it would be better if we could specialize for the use case of
     the view function author, but I understand how we've come to the
-    conclusions we've com to in this case.
+    conclusions we've come to in this case.
 
 ## Q3
-Q3: Is there a conflict between mutable data and allocations and copies.
+Q3: Is there a conflict between mutable data and allocations and copies?
 
 A3: When you allocate an integer in Python, you're allocating a whole integer
     object. That seems excessive, but we have tools to fix that for us.
