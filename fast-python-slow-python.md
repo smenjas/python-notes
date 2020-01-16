@@ -117,8 +117,8 @@ for part in b.view().split(b":"):
     part.write_to(sys.stdout.fileno())
     sys.stdout.write('\n')
 ```
-https://zero-buffer.readthedocs.org/
-https://warehouse.python.org/project/zero_buffer/
+- https://zero-buffer.readthedocs.org/
+- https://warehouse.python.org/project/zero_buffer/
 
 # A few more myths
 - Function calls are really expensive
@@ -128,10 +128,14 @@ https://warehouse.python.org/project/zero_buffer/
 https://speakerdeck.com/alex/
 
 # Q&A
+## Q1
 Q1: Is an object faster than a named tuple?
+
 A1: No. A named tuple allows the interpreter to specialize on the fields.
 
+## Q2
 Q2: Pyramid has a view function, is this a good use of a dictionary?
+
 A2: What we're specializing for depends on what perspective we have. From
     the perspective of the view author, the algorithm is about expressing a
     template and a data object.  From the perspective of the template engine
@@ -140,13 +144,16 @@ A2: What we're specializing for depends on what perspective we have. From
     the view function author, but I understand how we've come to the
     conclusions we've com to in this case.
 
+## Q3
 Q3: Is there a conflict between mutable data and allocations and copies.
+
 A3: When you allocate an integer in Python, you're allocating a whole integer
     object. That seems excessive, but we have tools to fix that for us.
     Mutability allows for parallelism. Closure's persisted hash map allows
     you to have a dictionary that's immutable, but without the incredible
     expense of copying all the time.
 
+## Q4
 Q4: You highlighted a couple of cases where our intuition about what is fast
     or slow in Python is either outdated or flat wrong. It seems like people
     often take an approach to performance analysis which is like an approach
@@ -154,6 +161,7 @@ Q4: You highlighted a couple of cases where our intuition about what is fast
     leave it to the experts. I'm wondering if you have advice for people who
     coming up in programming for tuning their intuition about what's actually
     fast or slow.
+
 A4: We can build tools to help people understand the performance of their
     application. The standard library comes with cprofile which does a pretty
     good job of letting us see, at a function level, which functions in our
@@ -167,9 +175,11 @@ A4: We can build tools to help people understand the performance of their
     sounds a bit overwhelming, but these tools I found to be shockingly
     A level of knowledge about our code that we didn't have without it.
 
+## Q5
 Q5: The Haskell community has been annotating their libraries with their time
     and space complexity. Have you seen this kind of analysis being useful
     in figuring out how extremely dynamic languages behave.
+
 A5: Absolutely. Before any sort of the optimizations I talk about here, the
     optimization of your algorithm itself will almost always dominate the
     performance of what you're trying to do. There's a great page on the
@@ -178,9 +188,11 @@ A5: Absolutely. Before any sort of the optimizations I talk about here, the
     present in the standard library (like skip lists, trees, heaps) can be
     useful.
 
+## Q6
 Q6: I'm confused about the difference of the performance between objects and
     dicts that you were talking about. When an instance of a class has the
     __dict__ method, at least when you're not using slots.
+
 A6: Objects with __dict__, how could they possibly have different performance
     from dicts? Why do you believe everything you see? Just because you see
     a thing that looks like a dict, why does it have to be a dict? Python
