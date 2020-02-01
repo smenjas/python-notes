@@ -11,6 +11,12 @@ My notes on the [Python programming language](https://www.python.org/).
   - [Essays](https://www.python.org/doc/essays/)
   - [Audio/video talks](https://www.python.org/doc/av/)
 - [PEP Index](https://www.python.org/dev/peps/)
+  - [PEP 8 -- Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/)
+  - [PEP 20 -- The Zen of Python](https://www.python.org/dev/peps/pep-0020/)
+  - [PEP 257 -- Docstring Conventions](https://www.python.org/dev/peps/pep-0257/)
+  - [PEP 440 -- Version Identification and Dependency Specification](https://www.python.org/dev/peps/pep-0440/)
+  - [PEP 3099 -- Things that will Not Change in Python 3000](https://www.python.org/dev/peps/pep-3099/)
+  - [more...](http://www.diegor.it/2017/06/15/the-must-read-pythons-peps/)
 - [Programming FAQ](https://docs.python.org/3/faq/programming.html)
 
 ### Web Sites
