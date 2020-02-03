@@ -103,7 +103,7 @@ My notes on the [Python programming language](https://www.python.org/).
   - [Django “How-to” guides](https://docs.djangoproject.com/en/3.0/howto/)
 - [Django Girls Tutorial](https://tutorial.djangogirls.org/)
 
-### [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+### [Flask](https://flask.palletsprojects.com/)
 
 ## License
 
