@@ -93,6 +93,18 @@ My notes on the [Python programming language](https://www.python.org/).
 
 ### [pyvideo](https://pyvideo.org/)
 
+### Python Frameworks
+
+#### [Django](https://www.djangoproject.com/)
+- [Django Documentation](https://docs.djangoproject.com/en/)
+  - [Getting Started](https://docs.djangoproject.com/en/3.0/intro/)
+  - [Using Django](https://docs.djangoproject.com/en/3.0/topics/)
+  - [Django API Reference](https://docs.djangoproject.com/en/3.0/ref/)
+  - [Django “How-to” guides](https://docs.djangoproject.com/en/3.0/howto/)
+- [Django Girls Tutorial](https://tutorial.djangogirls.org/)
+
+### [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+
 ## License
 
 Released as open source software under the terms of the [ISC License](https://en.wikipedia.org/wiki/ISC_license).
