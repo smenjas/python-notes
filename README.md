@@ -105,6 +105,19 @@ My notes on the [Python programming language](https://www.python.org/).
 
 ### [Flask](https://flask.palletsprojects.com/)
 
+### [Behavior-Driven Development (BDD)](https://en.wikipedia.org/wiki/Behavior-driven_development)
+- [What is behavior-driven Python?](https://opensource.com/article/18/5/behavior-driven-python)
+- [Python BDD Framework Comparison – The Pros and Cons](https://blog.testproject.io/2019/05/16/python-testing-framework-pros-cons/)
+- behave:
+  - [behave documentation](https://behave.readthedocs.io/)
+  - [GitHub: behave](https://github.com/behave/behave)
+- pytest-bdd:
+  - [pytest documentation](https://docs.pytest.org/)
+  - [pytest-bdd documentation](https://pytest-bdd.readthedocs.io/)
+  - [GitHub: pytest-bdd](https://github.com/pytest-dev/pytest-bdd)
+  - [Python Testing 101: pytest-bdd](https://automationpanda.com/2018/10/22/python-testing-101-pytest-bdd/)
+- [cucumber documentation](https://cucumber.io/docs/cucumber/)
+
 ## License
 
 Released as open source software under the terms of the [ISC License](https://en.wikipedia.org/wiki/ISC_license).
