@@ -107,7 +107,7 @@ My notes on the [Python programming language](https://www.python.org/).
 
 ### [Behavior-Driven Development (BDD)](https://en.wikipedia.org/wiki/Behavior-driven_development)
 - [What is behavior-driven Python?](https://opensource.com/article/18/5/behavior-driven-python)
-- [Python BDD Framework Comparison – The Pros and Cons](https://blog.testproject.io/2019/05/16/python-testing-framework-pros-cons/)
+- [Python BDD Framework Comparison](https://automationpanda.com/2019/04/02/python-bdd-framework-comparison/)
 - behave:
   - [behave documentation](https://behave.readthedocs.io/)
   - [GitHub: behave](https://github.com/behave/behave)
