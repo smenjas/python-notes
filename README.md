@@ -8,6 +8,7 @@ My notes on the [Python programming language](https://www.python.org/).
 
 ### [python.org](https://www.python.org/)
 - [Essays](https://www.python.org/doc/essays/)
+  - [Python Patterns - Implementing Graphs](https://www.python.org/doc/essays/graphs/)
 - [Documenation](https://docs.python.org/3/)
   - [Python Documentation contents](https://docs.python.org/3/contents.html)
     - [What’s New in Python](https://docs.python.org/3/whatsnew/)
