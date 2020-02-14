@@ -2,7 +2,20 @@
 
 My notes on the [Python programming language](https://www.python.org/).
 
-[Obey the testing goat!](https://www.obeythetestinggoat.com/book/chapter_01.html)
+- [Resources](#resources)
+  - [python.org](#python.org)
+  - [Web Sites](#web-sites)
+  - [Books](#books)
+    - [No Starch Press](#no-starch-press)
+    - [O'Reilly](#o-reilly)
+  - [Videos](#videos)
+    - [pyvideo](#pyvideo)
+  - [Frameworks](#frameworks)
+    - [Django](#)
+    - [Flask](#)
+  - [Behavior-Driven Development (BDD)](#behavior-driven-development-bdd)
+  - [Parallel Computing](#parallel-computing)
+- [License](#license)
 
 ## Resources
 
@@ -87,7 +100,7 @@ My notes on the [Python programming language](https://www.python.org/).
 - [Test-Driven Development with Python](https://www.obeythetestinggoat.com/pages/book.html)
 - [Think Python](https://greenteapress.com/wp/think-python-2e/)
 
-### YouTube
+### Videos
 - [Socratica](https://www.youtube.com/channel/UCW6TXMZ5Pq6yL6_k5NZ2e0Q)
 - [Corey Schafer](https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g)
 - [The Mighty Dictionary](https://www.youtube.com/watch?v=C4Kc8xzcA68)
@@ -95,7 +108,7 @@ My notes on the [Python programming language](https://www.python.org/).
 
 ### [pyvideo](https://pyvideo.org/)
 
-### Python Frameworks
+### Frameworks
 
 #### [Django](https://www.djangoproject.com/)
 - [Django Documentation](https://docs.djangoproject.com/en/)
