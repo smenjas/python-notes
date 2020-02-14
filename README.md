@@ -121,6 +121,22 @@ My notes on the [Python programming language](https://www.python.org/).
   - [Python Testing 101: pytest-bdd](https://automationpanda.com/2018/10/22/python-testing-101-pytest-bdd/)
 - [cucumber documentation](https://cucumber.io/docs/cucumber/)
 
+### [Parallel Computing](https://en.wikipedia.org/wiki/Parallel_computing)
+- [Apache Spark](https://spark.apache.org/)
+  - [Apache Spark Architectural Overview](https://mapr.com/ebooks/spark/03-apache-spark-architecture-overview.html)
+  - [How do Hadoop and Spark Stack Up?](https://logz.io/blog/hadoop-vs-spark/)
+  - [How to Pivot and Unpivot a Spark DataFrame](https://sparkbyexamples.com/spark/how-to-pivot-table-and-unpivot-a-spark-dataframe/)
+  - [Introduction to Data Analysis with Spark](https://www.oreilly.com/library/view/learning-spark/9781449359034/ch01.html)
+  - [Spark performance for Scala vs Python](https://stackoverflow.com/questions/32464122/spark-performance-for-scala-vs-python/32471016)
+  - [The Good, Bad and Ugly: Apache Spark for Data Science Work](https://thenewstack.io/the-good-bad-and-ugly-apache-spark-for-data-science-work/)
+  - [The Spark Stack](https://subscription.packtpub.com/book/big_data_and_business_intelligence/9781785885655/1/ch01lvl1sec11/the-spark-stack)
+  - [pyspark package](https://spark.apache.org/docs/latest/api/python/pyspark.html)
+    - [A Brief Introduction to PySpark](https://towardsdatascience.com/a-brief-introduction-to-pyspark-ff4284701873)
+    - [First Steps With PySpark and Big Data Processing](https://realpython.com/pyspark-intro/#what-is-spark)
+    - [PySpark Programming – Integrating Speed With Simplicity](https://www.edureka.co/blog/pyspark-programming/)
+- [Dask](https://dask.org/)
+- [Parallel Python](https://www.parallelpython.com/)
+
 ## License
 
 Released as open source software under the terms of the [ISC License](https://en.wikipedia.org/wiki/ISC_license).
