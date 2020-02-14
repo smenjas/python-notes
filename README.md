@@ -3,11 +3,11 @@
 My notes on the [Python programming language](https://www.python.org/).
 
 - [Resources](#resources)
-  - [python.org](#python.org)
+  - [python.org](#pythonorg)
   - [Web Sites](#web-sites)
   - [Books](#books)
     - [No Starch Press](#no-starch-press)
-    - [O'Reilly](#o-reilly)
+    - [O'Reilly](#oreilly)
   - [Videos](#videos)
     - [pyvideo](#pyvideo)
   - [Frameworks](#frameworks)
