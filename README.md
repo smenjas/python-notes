@@ -59,6 +59,7 @@ My notes on the [Python programming language](https://www.python.org/).
   - [PEP 8 -- Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/)
   - [PEP 20 -- The Zen of Python](https://www.python.org/dev/peps/pep-0020/)
   - [PEP 257 -- Docstring Conventions](https://www.python.org/dev/peps/pep-0257/)
+  - [PEP 420 -- Implicit Namespace Packages](https://www.python.org/dev/peps/pep-0420/)
   - [PEP 440 -- Version Identification and Dependency Specification](https://www.python.org/dev/peps/pep-0440/)
   - [PEP 483 -- The Theory of Type Hints](https://www.python.org/dev/peps/pep-0483/)
   - [PEP 484 -- Type Hints](https://www.python.org/dev/peps/pep-0484/)
