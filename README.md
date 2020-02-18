@@ -1,25 +1,22 @@
 # Python Notes
-
 My notes on the [Python programming language](https://www.python.org/).
 
-- [Resources](#resources)
-  - [python.org](#pythonorg)
-  - [Web Sites](#web-sites)
-  - [Books](#books)
-    - [No Starch Press](#no-starch-press)
-    - [O'Reilly](#oreilly)
-  - [Videos](#videos)
-    - [pyvideo](#pyvideo)
-  - [Frameworks](#frameworks)
-    - [Django](#django)
-    - [Flask](#flask)
-  - [Behavior-Driven Development (BDD)](#behavior-driven-development-bdd)
-  - [Parallel Computing](#parallel-computing)
+- [python.org](#pythonorg)
+- [Web Sites](#web-sites)
+- [Books](#books)
+  - [No Starch Press](#no-starch-press)
+  - [O'Reilly](#oreilly)
+- [Videos](#videos)
+  - [pyvideo](#pyvideo)
+- [Frameworks](#frameworks)
+  - [Django](#django)
+  - [Flask](#flask)
+- [Behavior-Driven Development (BDD)](#behavior-driven-development-bdd)
+- [Machine Learning](#machine-learning)
+- [Parallel Computing](#parallel-computing)
 - [License](#license)
 
-## Resources
-
-### [python.org](https://www.python.org/)
+## [python.org](https://www.python.org/)
 - [Essays](https://www.python.org/doc/essays/)
   - [Python Patterns - Implementing Graphs](https://www.python.org/doc/essays/graphs/)
 - [Documenation](https://docs.python.org/3/)
@@ -66,7 +63,7 @@ My notes on the [Python programming language](https://www.python.org/).
   - [PEP 3099 -- Things that will Not Change in Python 3000](https://www.python.org/dev/peps/pep-3099/)
   - [more...](http://www.diegor.it/2017/06/15/the-must-read-pythons-peps/)
 
-### Web Sites
+## Web Sites
 - [python-course.eu](https://www.python-course.eu/)
 - [freeCodeCamp: Python](https://guide.freecodecamp.org/python/)
 - [Google's Python Class](https://developers.google.com/edu/python)
@@ -75,7 +72,7 @@ My notes on the [Python programming language](https://www.python.org/).
 - [Your First Machine Learning Project in Python Step-By-Step](https://machinelearningmastery.com/machine-learning-in-python-step-by-step/)
 - [Pythonic Data Structures and Algorithms](https://github.com/keon/algorithms)
 
-### Books
+## Books
 - [A Byte of Python](https://python.swaroopch.com/)
 - [Effective Python](https://effectivepython.com/)
 - [Grokking Algorithms](https://www.manning.com/books/grokking-algorithms)
@@ -86,24 +83,27 @@ My notes on the [Python programming language](https://www.python.org/).
 - [Wikibooks: Python Programming](https://en.wikibooks.org/wiki/Python_Programming)
 - [more books...](https://wiki.python.org/moin/PythonBooks)
 
-#### [No Starch Press](https://nostarch.com/catalog/python)
+### [No Starch Press](https://nostarch.com/catalog/python)
 - [Automate the Boring Stuff](https://automatetheboringstuff.com/)
 - [Python Crash Course](https://nostarch.com/pythoncrashcourse2e)
 - [Serious Python](https://nostarch.com/seriouspython)
 - [more...](https://nostarch.com/catalog/python)
 
-#### [O'Reilly](https://www.oreilly.com/search/?query=python)
+### [O'Reilly](https://www.oreilly.com/search/?query=python)
 - [Fluent Python](http://shop.oreilly.com/product/0636920032519.do)
-- [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/)
 - [Introducing Python](http://shop.oreilly.com/product/0636920252528.do)
 - [Python Cookbook](https://www.dabeaz.com/cookbook.html)
-- [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)
-- [Python for Data Analysis](http://shop.oreilly.com/product/0636920023784.do)
 - [Python for DevOps](https://www.oreilly.com/library/view/python-for-devops/9781492057680/)
 - [Test-Driven Development with Python](https://www.obeythetestinggoat.com/pages/book.html)
 - [Think Python](https://greenteapress.com/wp/think-python-2e/)
+- Data Science
+  - [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)
+  - [Python for Data Analysis](http://shop.oreilly.com/product/0636920023784.do)
+- Machine Learning
+  - [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/)
+  - [Deep Learning for Coders with fastai and PyTorch: AI Applications Without a PhD](https://www.amazon.com/Deep-Learning-Coders-fastai-PyTorch/dp/1492045527)
 
-### Videos
+## Videos
 - [Socratica](https://www.youtube.com/channel/UCW6TXMZ5Pq6yL6_k5NZ2e0Q)
 - [Corey Schafer](https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g)
 - [The Mighty Dictionary](https://www.youtube.com/watch?v=C4Kc8xzcA68)
@@ -111,9 +111,9 @@ My notes on the [Python programming language](https://www.python.org/).
 
 ### [pyvideo](https://pyvideo.org/)
 
-### Frameworks
+## Frameworks
 
-#### [Django](https://www.djangoproject.com/)
+### [Django](https://www.djangoproject.com/)
 - [Django Documentation](https://docs.djangoproject.com/en/)
   - [Getting Started](https://docs.djangoproject.com/en/3.0/intro/)
   - [Using Django](https://docs.djangoproject.com/en/3.0/topics/)
@@ -123,7 +123,7 @@ My notes on the [Python programming language](https://www.python.org/).
 
 ### [Flask](https://flask.palletsprojects.com/)
 
-### [Behavior-Driven Development (BDD)](https://en.wikipedia.org/wiki/Behavior-driven_development)
+## [Behavior-Driven Development (BDD)](https://en.wikipedia.org/wiki/Behavior-driven_development)
 - [What is behavior-driven Python?](https://opensource.com/article/18/5/behavior-driven-python)
 - [Python BDD Framework Comparison](https://automationpanda.com/2019/04/02/python-bdd-framework-comparison/)
 - behave:
@@ -137,7 +137,19 @@ My notes on the [Python programming language](https://www.python.org/).
   - [Python Testing 101: pytest-bdd](https://automationpanda.com/2018/10/22/python-testing-101-pytest-bdd/)
 - [cucumber documentation](https://cucumber.io/docs/cucumber/)
 
-### [Parallel Computing](https://en.wikipedia.org/wiki/Parallel_computing)
+## [Machine Learning](https://en.wikipedia.org/wiki/Machine_learning)
+- [Practical Machine Learning Tutorial with Python Introduction](https://pythonprogramming.net/machine-learning-tutorial-python-introduction/)
+- [fast.ai](https://www.fast.ai/)
+  - [fastai Documentation](https://docs.fast.ai/)
+  - [fastai: A Layered API for Deep Learning](https://arxiv.org/abs/2002.04688)
+- [PyTorch](https://pytorch.org/)
+- [TensorFlow](https://www.tensorflow.org/)
+  - [TensorFlow Tutorials](https://www.tensorflow.org/tutorials)
+  - [Machine Learning Mastery: Introduction to the Python Deep Learning Library TensorFlow](https://machinelearningmastery.com/introduction-python-deep-learning-library-tensorflow/)
+  - [DataCamp: TensorFlow Tutorial For Beginners](https://www.datacamp.com/community/tutorials/tensorflow-tutorial)
+  - [GitHub: TensorFlow](https://github.com/tensorflow/tensorflow)
+
+## [Parallel Computing](https://en.wikipedia.org/wiki/Parallel_computing)
 - [Apache Spark](https://spark.apache.org/)
   - [Apache Spark Architectural Overview](https://mapr.com/ebooks/spark/03-apache-spark-architecture-overview.html)
   - [How do Hadoop and Spark Stack Up?](https://logz.io/blog/hadoop-vs-spark/)
@@ -154,5 +166,4 @@ My notes on the [Python programming language](https://www.python.org/).
 - [Parallel Python](https://www.parallelpython.com/)
 
 ## License
-
 Released as open source software under the terms of the [ISC License](https://en.wikipedia.org/wiki/ISC_license).
