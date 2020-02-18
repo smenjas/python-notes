@@ -73,11 +73,13 @@ My notes on the [Python programming language](https://www.python.org/).
 - [Real Python](https://realpython.com/)
 - [W3Schools: Python](https://www.w3schools.com/python/)
 - [Your First Machine Learning Project in Python Step-By-Step](https://machinelearningmastery.com/machine-learning-in-python-step-by-step/)
+- [Pythonic Data Structures and Algorithms](https://github.com/keon/algorithms)
 
 ### Books
 - [A Byte of Python](https://python.swaroopch.com/)
 - [Effective Python](https://effectivepython.com/)
 - [Grokking Algorithms](https://www.manning.com/books/grokking-algorithms)
+- [Practical Algorithms and Data Structures](https://bradfieldcs.com/algos/)
 - [Python Machine Learning](https://sebastianraschka.com/books.html)
 - [Python Tricks](https://realpython.com/products/python-tricks-book/)
 - [The Hitchhiker's Guide to Python](https://docs.python-guide.org/)
