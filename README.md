@@ -60,6 +60,7 @@ My notes on the [Python programming language](https://www.python.org/).
   - [PEP 440 -- Version Identification and Dependency Specification](https://www.python.org/dev/peps/pep-0440/)
   - [PEP 483 -- The Theory of Type Hints](https://www.python.org/dev/peps/pep-0483/)
   - [PEP 484 -- Type Hints](https://www.python.org/dev/peps/pep-0484/)
+  - [PEP 584 -- Add Union Operators To dict](https://www.python.org/dev/peps/pep-0584/)
   - [PEP 3099 -- Things that will Not Change in Python 3000](https://www.python.org/dev/peps/pep-3099/)
   - [more...](http://www.diegor.it/2017/06/15/the-must-read-pythons-peps/)
 
