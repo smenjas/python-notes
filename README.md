@@ -105,6 +105,7 @@ My notes on the [Python programming language](https://www.python.org/).
   - [Deep Learning for Coders with fastai and PyTorch: AI Applications Without a PhD](https://www.amazon.com/Deep-Learning-Coders-fastai-PyTorch/dp/1492045527)
 
 ## Videos
+- [SF Python](https://www.youtube.com/c/sfpython)
 - [Socratica](https://www.youtube.com/channel/UCW6TXMZ5Pq6yL6_k5NZ2e0Q)
 - [Corey Schafer](https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g)
 - [The Mighty Dictionary](https://www.youtube.com/watch?v=C4Kc8xzcA68)
