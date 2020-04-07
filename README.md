@@ -71,6 +71,7 @@ My notes on the [Python programming language](https://www.python.org/).
 - [Real Python](https://realpython.com/)
 - [W3Schools: Python](https://www.w3schools.com/python/)
 - [Your First Machine Learning Project in Python Step-By-Step](https://machinelearningmastery.com/machine-learning-in-python-step-by-step/)
+- [Problem Solving with Algorithms and Data Structures using Python](https://runestone.academy/runestone/books/published/pythonds/)
 - [Pythonic Data Structures and Algorithms](https://github.com/keon/algorithms)
 
 ## Books
