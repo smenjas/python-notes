@@ -65,6 +65,7 @@ My notes on the [Python programming language](https://www.python.org/).
   - [more...](http://www.diegor.it/2017/06/15/the-must-read-pythons-peps/)
 
 ## Web Sites
+- [An Introduction to Python and Programming](https://github.com/webartifex/intro-to-python)
 - [python-course.eu](https://www.python-course.eu/)
 - [freeCodeCamp: Python](https://guide.freecodecamp.org/python/)
 - [Google's Python Class](https://developers.google.com/edu/python)
