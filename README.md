@@ -1,13 +1,13 @@
 # Python Notes
 My notes on the [Python programming language](https://www.python.org/).
 
-- [python.org](#pythonorg)
-- [Web Sites](#web-sites)
 - [Books](#books)
   - [No Starch Press](#no-starch-press)
   - [O'Reilly](#oreilly)
 - [Videos](#videos)
   - [pyvideo](#pyvideo)
+- [Web Sites](#web-sites)
+  - [python.org](#pythonorg)
 - [Frameworks](#frameworks)
   - [Django](#django)
   - [Flask](#flask)
@@ -16,7 +16,59 @@ My notes on the [Python programming language](https://www.python.org/).
 - [Parallel Computing](#parallel-computing)
 - [License](#license)
 
-## [python.org](https://www.python.org/)
+## Books
+- [A Byte of Python](https://python.swaroopch.com/)
+- [Effective Python](https://effectivepython.com/)
+- [Grokking Algorithms](https://www.manning.com/books/grokking-algorithms)
+- [Practical Algorithms and Data Structures](https://bradfieldcs.com/algos/)
+- [Python Machine Learning](https://sebastianraschka.com/books.html)
+- [Python Tricks](https://realpython.com/products/python-tricks-book/)
+- [The Hitchhiker's Guide to Python](https://docs.python-guide.org/)
+- [Wikibooks: Python Programming](https://en.wikibooks.org/wiki/Python_Programming)
+- [The Quick Python Book](https://www.manning.com/books/the-quick-python-book-third-edition#toc)
+- [SICP in Python](https://wizardforcel.gitbooks.io/sicp-in-python/content/)
+- [more books...](https://wiki.python.org/moin/PythonBooks)
+
+### [No Starch Press](https://nostarch.com/catalog/python)
+- [Automate the Boring Stuff](https://automatetheboringstuff.com/)
+- [Python Crash Course](https://nostarch.com/pythoncrashcourse2e)
+- [Serious Python](https://nostarch.com/seriouspython)
+- [more...](https://nostarch.com/catalog/python)
+
+### [O'Reilly](https://www.oreilly.com/search/?query=python)
+- [Fluent Python](http://shop.oreilly.com/product/0636920032519.do)
+- [Introducing Python](http://shop.oreilly.com/product/0636920252528.do)
+- [Python Cookbook](https://www.dabeaz.com/cookbook.html)
+- [Python for DevOps](https://www.oreilly.com/library/view/python-for-devops/9781492057680/)
+- [Test-Driven Development with Python](https://www.obeythetestinggoat.com/pages/book.html)
+- [Think Python](https://greenteapress.com/wp/think-python-2e/)
+- Data Science
+  - [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)
+  - [Python for Data Analysis](http://shop.oreilly.com/product/0636920023784.do)
+- Machine Learning
+  - [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/)
+  - [Deep Learning for Coders with fastai and PyTorch: AI Applications Without a PhD](https://www.amazon.com/Deep-Learning-Coders-fastai-PyTorch/dp/1492045527)
+
+## Videos
+- [SF Python](https://www.youtube.com/c/sfpython)
+- [Socratica](https://www.youtube.com/channel/UCW6TXMZ5Pq6yL6_k5NZ2e0Q)
+- [Corey Schafer](https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g)
+- [The Mighty Dictionary](https://www.youtube.com/watch?v=C4Kc8xzcA68)
+- [Transforming Code into Beautiful, Idiomatic Python](https://www.youtube.com/watch?v=OSGv2VnC0go)
+- [pyvideo](https://pyvideo.org/)
+
+## Web Sites
+- [An Introduction to Python and Programming](https://github.com/webartifex/intro-to-python)
+- [python-course.eu](https://www.python-course.eu/)
+- [freeCodeCamp: Python](https://guide.freecodecamp.org/python/)
+- [Google's Python Class](https://developers.google.com/edu/python)
+- [Real Python](https://realpython.com/)
+- [W3Schools: Python](https://www.w3schools.com/python/)
+- [Your First Machine Learning Project in Python Step-By-Step](https://machinelearningmastery.com/machine-learning-in-python-step-by-step/)
+- [Problem Solving with Algorithms and Data Structures using Python](https://runestone.academy/runestone/books/published/pythonds/)
+- [Pythonic Data Structures and Algorithms](https://github.com/keon/algorithms)
+
+### [python.org](https://www.python.org/)
 - [Essays](https://www.python.org/doc/essays/)
   - [Python Patterns - Implementing Graphs](https://www.python.org/doc/essays/graphs/)
 - [Documenation](https://docs.python.org/3/)
@@ -63,59 +115,6 @@ My notes on the [Python programming language](https://www.python.org/).
   - [PEP 584 -- Add Union Operators To dict](https://www.python.org/dev/peps/pep-0584/)
   - [PEP 3099 -- Things that will Not Change in Python 3000](https://www.python.org/dev/peps/pep-3099/)
   - [more...](http://www.diegor.it/2017/06/15/the-must-read-pythons-peps/)
-
-## Web Sites
-- [An Introduction to Python and Programming](https://github.com/webartifex/intro-to-python)
-- [python-course.eu](https://www.python-course.eu/)
-- [freeCodeCamp: Python](https://guide.freecodecamp.org/python/)
-- [Google's Python Class](https://developers.google.com/edu/python)
-- [Real Python](https://realpython.com/)
-- [W3Schools: Python](https://www.w3schools.com/python/)
-- [Your First Machine Learning Project in Python Step-By-Step](https://machinelearningmastery.com/machine-learning-in-python-step-by-step/)
-- [Problem Solving with Algorithms and Data Structures using Python](https://runestone.academy/runestone/books/published/pythonds/)
-- [Pythonic Data Structures and Algorithms](https://github.com/keon/algorithms)
-
-## Books
-- [A Byte of Python](https://python.swaroopch.com/)
-- [Effective Python](https://effectivepython.com/)
-- [Grokking Algorithms](https://www.manning.com/books/grokking-algorithms)
-- [Practical Algorithms and Data Structures](https://bradfieldcs.com/algos/)
-- [Python Machine Learning](https://sebastianraschka.com/books.html)
-- [Python Tricks](https://realpython.com/products/python-tricks-book/)
-- [The Hitchhiker's Guide to Python](https://docs.python-guide.org/)
-- [Wikibooks: Python Programming](https://en.wikibooks.org/wiki/Python_Programming)
-- [The Quick Python Book](https://www.manning.com/books/the-quick-python-book-third-edition#toc)
-- [SICP in Python](https://wizardforcel.gitbooks.io/sicp-in-python/content/)
-- [more books...](https://wiki.python.org/moin/PythonBooks)
-
-### [No Starch Press](https://nostarch.com/catalog/python)
-- [Automate the Boring Stuff](https://automatetheboringstuff.com/)
-- [Python Crash Course](https://nostarch.com/pythoncrashcourse2e)
-- [Serious Python](https://nostarch.com/seriouspython)
-- [more...](https://nostarch.com/catalog/python)
-
-### [O'Reilly](https://www.oreilly.com/search/?query=python)
-- [Fluent Python](http://shop.oreilly.com/product/0636920032519.do)
-- [Introducing Python](http://shop.oreilly.com/product/0636920252528.do)
-- [Python Cookbook](https://www.dabeaz.com/cookbook.html)
-- [Python for DevOps](https://www.oreilly.com/library/view/python-for-devops/9781492057680/)
-- [Test-Driven Development with Python](https://www.obeythetestinggoat.com/pages/book.html)
-- [Think Python](https://greenteapress.com/wp/think-python-2e/)
-- Data Science
-  - [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)
-  - [Python for Data Analysis](http://shop.oreilly.com/product/0636920023784.do)
-- Machine Learning
-  - [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/)
-  - [Deep Learning for Coders with fastai and PyTorch: AI Applications Without a PhD](https://www.amazon.com/Deep-Learning-Coders-fastai-PyTorch/dp/1492045527)
-
-## Videos
-- [SF Python](https://www.youtube.com/c/sfpython)
-- [Socratica](https://www.youtube.com/channel/UCW6TXMZ5Pq6yL6_k5NZ2e0Q)
-- [Corey Schafer](https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g)
-- [The Mighty Dictionary](https://www.youtube.com/watch?v=C4Kc8xzcA68)
-- [Transforming Code into Beautiful, Idiomatic Python](https://www.youtube.com/watch?v=OSGv2VnC0go)
-
-### [pyvideo](https://pyvideo.org/)
 
 ## Frameworks
 
