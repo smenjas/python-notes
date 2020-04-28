@@ -85,6 +85,7 @@ My notes on the [Python programming language](https://www.python.org/).
 - [The Hitchhiker's Guide to Python](https://docs.python-guide.org/)
 - [Wikibooks: Python Programming](https://en.wikibooks.org/wiki/Python_Programming)
 - [The Quick Python Book](https://www.manning.com/books/the-quick-python-book-third-edition#toc)
+- [SICP in Python](https://wizardforcel.gitbooks.io/sicp-in-python/content/)
 - [more books...](https://wiki.python.org/moin/PythonBooks)
 
 ### [No Starch Press](https://nostarch.com/catalog/python)
