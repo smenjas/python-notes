@@ -84,6 +84,7 @@ My notes on the [Python programming language](https://www.python.org/).
 - [Python Tricks](https://realpython.com/products/python-tricks-book/)
 - [The Hitchhiker's Guide to Python](https://docs.python-guide.org/)
 - [Wikibooks: Python Programming](https://en.wikibooks.org/wiki/Python_Programming)
+- [The Quick Python Book](https://www.manning.com/books/the-quick-python-book-third-edition#toc)
 - [more books...](https://wiki.python.org/moin/PythonBooks)
 
 ### [No Starch Press](https://nostarch.com/catalog/python)
