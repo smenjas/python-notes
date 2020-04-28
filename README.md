@@ -12,6 +12,7 @@ My notes on the [Python programming language](https://www.python.org/).
   - [Django](#django)
   - [Flask](#flask)
 - [Behavior-Driven Development (BDD)](#behavior-driven-development-bdd)
+- [Data Science](#data-science)
 - [Machine Learning](#machine-learning)
 - [Parallel Computing](#parallel-computing)
 - [License](#license)
@@ -142,6 +143,10 @@ My notes on the [Python programming language](https://www.python.org/).
   - [Python Testing 101: pytest-bdd](https://automationpanda.com/2018/10/22/python-testing-101-pytest-bdd/)
 - [cucumber documentation](https://cucumber.io/docs/cucumber/)
 
+## [Data Science](https://en.wikipedia.org/wiki/Data_science)
+- [Pandas](https://pandas.pydata.org/)
+- [NumPy](https://numpy.org/)
+
 ## [Machine Learning](https://en.wikipedia.org/wiki/Machine_learning)
 - [Practical Machine Learning Tutorial with Python Introduction](https://pythonprogramming.net/machine-learning-tutorial-python-introduction/)
 - [fast.ai](https://www.fast.ai/)
@@ -153,6 +158,7 @@ My notes on the [Python programming language](https://www.python.org/).
   - [Machine Learning Mastery: Introduction to the Python Deep Learning Library TensorFlow](https://machinelearningmastery.com/introduction-python-deep-learning-library-tensorflow/)
   - [DataCamp: TensorFlow Tutorial For Beginners](https://www.datacamp.com/community/tutorials/tensorflow-tutorial)
   - [GitHub: TensorFlow](https://github.com/tensorflow/tensorflow)
+- [Sidekit](https://projets-lium.univ-lemans.fr/sidekit/)
 
 ## [Parallel Computing](https://en.wikipedia.org/wiki/Parallel_computing)
 - [Apache Spark](https://spark.apache.org/)
