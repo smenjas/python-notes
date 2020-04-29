@@ -4,6 +4,8 @@ Brandon Craig Rhodes
 PyCon 2010 Atlanta
 https://www.youtube.com/watch?v=C4Kc8xzcA68
 
+---
+
 Q: How can Python lists access every one of their items with equal speed?
 
 A: Python lists use segments of RAM and RAM acts like a Python list!
@@ -52,7 +54,7 @@ Because collisions move keys away from their natural hash values, key order
 is quite sensitive to dictionary history.
 
 # The same yet different
-Although these two dictionaries are conisdered equal, their different
+Although these two dictionaries are considered equal, their different
 histories put their keys in a different order.
 ```python
 d = {'smtp': 21, 'dict': 2628, 'svn': 3690, 'ircd': 6667, 'zope': 9673}
@@ -79,7 +81,7 @@ When deleting a key, you need to leave "dummy" keys.
 del d['smtp']
 ```
 
-# Dicts refuse to get full.
+# Dicts refuse to get full
 To keep collisions rare, dicts resize when only 2/3 full.
 When < 50k entries, size x4
 When > 50k entries size x2
@@ -121,6 +123,7 @@ words = wordfile.read().split()[:1365]
 words = [ w for w in text.split()
     if w == w.lower() and len(w) < 6 ]
 print(words)
+```
 
 # Consequence #7
 Because of reszing, a dictionary can completely reorder during an otherwise
@@ -134,7 +137,7 @@ d.keys() # ['and', 'fire', 'Double', 'double', 'toil', 'trouble']
 
 # Consequence #8
 Because an insert can radically reorder a dictionary, key insertion is
-prohibited during insertion.
+prohibited during iteration.
 ```python
 d = {'Double': 1, 'double': 2, 'toil': 3, 'and': 4, 'trouble': 5}
 for key in d:
@@ -160,7 +163,7 @@ If your class needs its own __hash__() method you now know how hashes
 should behave.
 - Scatter bits like crazy
 - Equal instances must have equal hashes
-- Must also impolement __eq__() method
+- Must also implement __eq__() method
 - Make hash and equality quick!
 You can often get away with ^ xor'ing the hashes of your instance
 variables.
@@ -189,7 +192,8 @@ All values that can represent an integer, use the same hash as the integer.
 
 May your hashes be unique, your hash tables never full, and may your keys
 rarely collide.
-```
+
+---
 
 # Q&A
 
@@ -220,7 +224,9 @@ A6: It's like copying into a new dictionary.  It's a malloc of new memory.
     but there are so many inserts that are free, that on average it's not
     time you need to worry about.
 
-# My notes
+---
+
+# My Notes
 
 # Python Lists
 In Python, lists are contiguous segments of memory, so they are very fast.
@@ -303,3 +309,4 @@ protocols = {
     'svn': 3690,
     'ircd': 6667,
     'zope': 9673}
+```
