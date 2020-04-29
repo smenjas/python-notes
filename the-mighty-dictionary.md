@@ -6,6 +6,36 @@ https://www.youtube.com/watch?v=C4Kc8xzcA68
 
 ---
 
+- [The Dictionary](#the-dictionary)
+- [The Three Rules](#the-three-rules)
+- [Key and Indexes](#keys-and-indexes)
+- [Consequence #1](#consequence-1)
+- [Collision](#collision)
+- [Consequence #2](#consequence-2)
+- [The same yet different](#the-same-yet-different)
+- [Consequence #3](#consequence-3)
+- [Stupid Dictionary Trick #1](#stupid-dictionary-trick-1)
+- [Consequence #5](#consequence-5)
+- [Dicts refuse to get full](#dicts-refuse-to-get-full)
+- [Consequence #6](#consequence-6)
+- [Consequence #7](#consequence-7)
+- [Consequence #8](#consequence-8)
+- [Take-away #1](#take-away-1)
+- [Take-away #2](#take-away-2)
+- [Take-away #3](#take-away-3)
+- [Hashing your own classes](#hashing-your-own-classes)
+- [Take-away #4](#take-away-4)
+- [Q&A](#qa)
+- [My Notes](#my-notes)
+  - [Python Lists](#python-lists)
+  - [Python Dictionaries](#python-dictionaries)
+  - [Hashing](#hashing)
+  - [Space & Time](#space--time)
+  - [Sets](#sets)
+  - [Examples](#examples)
+
+---
+
 Q: How can Python lists access every one of their items with equal speed?
 
 A: Python lists use segments of RAM and RAM acts like a Python list!
@@ -14,14 +44,14 @@ A: Python lists use segments of RAM and RAM acts like a Python list!
 - Its first address is zero!
 - Easy to implement a list atop memory
 
-# The Dictionary
+## The Dictionary
 Uses keys instead of indexes and keys can be almost anything (as long as
 they are immutable).
 
 How can we turn the keys dictionaries use into indexes that reach memory
 quickly?
 
-# The Three Rules
+## The Three Rules
 1. A dictionary is really a list
 2. Keys are hashed to produce indexes.
 3. If at first you don't succeed, try, try again.
@@ -40,20 +70,20 @@ for key in 'Monty', 'Money':
 
 Hashes look crazy, but the same value always returns the same hash!
 
-# Key and Indexes
+## Keys and Indexes
 To build an index, Python uses the bottom n bits of the hash.
 
-# Consequence #1
+## Consequence #1
 Dictionaries tend to return their contents in a crazy order.
 
-# Collision
+## Collision
 When two keys in a dictionary want the same slot.
 
-# Consequence #2
+## Consequence #2
 Because collisions move keys away from their natural hash values, key order
 is quite sensitive to dictionary history.
 
-# The same yet different
+## The same yet different
 Although these two dictionaries are considered equal, their different
 histories put their keys in a different order.
 ```python
@@ -64,24 +94,24 @@ d.keys() # ['svn', 'dict', 'zope', 'smtp', 'ircd']
 e.keys() # ['ircd', 'zope', 'smtp', 'svn', 'dict']
 ```
 
-# Consequence #3
+## Consequence #3
 The lookup algorithm is actually more complicated than "hash, truncate, look".
 It's more like "until you find an empty slot, keep looking, it could be here
 somewhere!"
 
-# Stupid Dictionary Trick #1
+## Stupid Dictionary Trick #1
 Because integers hash as themselves, we can create unlimited collisions!
 ```python
 threes = {3: 1, 3+8: 2, 3+16: 3, 3+24: 4, 3+32: 5}
 ```
 
-# Consequence #5
+## Consequence #5
 When deleting a key, you need to leave "dummy" keys.
 ```python
 del d['smtp']
 ```
 
-# Dicts refuse to get full
+## Dicts refuse to get full
 To keep collisions rare, dicts resize when only 2/3 full.
 When < 50k entries, size x4
 When > 50k entries size x2
@@ -113,7 +143,7 @@ d = dict.fromkeys(words[:85])
 Life cycle as dictionary fills: gradually more crowded as keys are added,
 then suddenly less as dict resizes.
 
-# Consequence #6
+## Consequence #6
 Average dictionary performance is excellent.
 
 A dictionary of common words:
@@ -125,7 +155,7 @@ words = [ w for w in text.split()
 print(words)
 ```
 
-# Consequence #7
+## Consequence #7
 Because of reszing, a dictionary can completely reorder during an otherwise
 innocent insert.
 ```python
@@ -135,7 +165,7 @@ d['fire'] = 6
 d.keys() # ['and', 'fire', 'Double', 'double', 'toil', 'trouble']
 ```
 
-# Consequence #8
+## Consequence #8
 Because an insert can radically reorder a dictionary, key insertion is
 prohibited during iteration.
 ```python
@@ -146,19 +176,19 @@ for key in d:
 The above code results in a "RuntimeError: dictionary changed size during
 iteration."
 
-# Take-away #1
+## Take-away #1
 Hopefully "the rules" now make a bit more sense and seem less arbitrary.
 - Don't rely on order.
 - Don't insert while iterating.
 - Can't have mutable keys.
 
-# Take-away #2
+## Take-away #2
 Dictionaries trade space for time.  If you need more space, there are
 alternatives.
 - Tuples or namedtuples (Python 2.6)
 - Give classes __slots__
 
-# Take-away #3
+## Take-away #3
 If your class needs its own __hash__() method you now know how hashes
 should behave.
 - Scatter bits like crazy
@@ -168,7 +198,7 @@ should behave.
 You can often get away with ^ xor'ing the hashes of your instance
 variables.
 
-# Hashing your own classes
+## Hashing your own classes
 ```python
 class Point(object):
     def __init__(self, x, y):
@@ -181,7 +211,7 @@ class Point(object):
         return hash(self.x) ^ hash(self.y)
 ```
 
-# Take-away #4
+## Take-away #4
 Equal values should have equal hashes regardless of their type!
 ```python
 hash(9) # 9
@@ -195,30 +225,30 @@ rarely collide.
 
 ---
 
-# Q&A
+## Q&A
 
-Q1: Do dictionaries resize themselves back down as entries are deleted?
-A1: No they are only resized upwards on insert.  Copy data into a new one
+- *Q1*: Do dictionaries resize themselves back down as entries are deleted?
+- *A1*: No they are only resized upwards on insert.  Copy data into a new one
     to reduce memory usage.
 
-Q2: Does a set work the same as a dictionary?
-A2: Yes. A set is a dictionary without storage for the value.
+- *Q2*: Does a set work the same as a dictionary?
+- *A2*: Yes. A set is a dictionary without storage for the value.
 
-Q3: What if there is a true hash collision, where two different keys return
+- *Q3*: What if there is a true hash collision, where two different keys return
     the same hash value?
-A3: After comparing the hashes, Python will compare the keys, and look for
+- *A3*: After comparing the hashes, Python will compare the keys, and look for
     another slot.
 
-Q4: Is there a way to preallocate a large dictionary?
-A4: In C it's possible, but I don't know how to do it in Python.
+- *Q4*: Is there a way to preallocate a large dictionary?
+- *A4*: In C it's possible, but I don't know how to do it in Python.
 
-Q5: Is it true that every time the hash table is resized, it forces the keys
+- *Q5*: Is it true that every time the hash table is resized, it forces the keys
     to reorder?
-A6: In general yes, but you could contrive an example where that wouldn't
+- *A5*: In general yes, but you could contrive an example where that wouldn't
     happen because of the next bits taken into account don't affect the order.
 
-Q5: Is it an expensive operation to do the reordering?
-A6: It's like copying into a new dictionary.  It's a malloc of new memory.
+- *Q6*: Is it an expensive operation to do the reordering?
+- *A6*: It's like copying into a new dictionary.  It's a malloc of new memory.
     It has to do an insert of every entry.  The expense of the reordering on
     average costs nothing.  It just makes those particular moments expensive,
     but there are so many inserts that are free, that on average it's not
@@ -226,19 +256,19 @@ A6: It's like copying into a new dictionary.  It's a malloc of new memory.
 
 ---
 
-# My Notes
+## My Notes
 
-# Python Lists
+### Python Lists
 In Python, lists are contiguous segments of memory, so they are very fast.
 The indexing matches the way memory is indexed.
 
-# Python Dictionaries.
+### Python Dictionaries
 Dictionaries are just lists, where the index relates to a hash function.
 
 A hash table in contiguous memory, containing 8 rows by default, with an
 index, a hash, the key, and the value.
 
-# Hashing
+### Hashing
 Integers hash to themselves.  Anything else has a hash computed.
 
 First, an 8 element list is created.  By default, the last 3 bits of the
@@ -286,7 +316,7 @@ When you delete an entry that beat other entries to that slot, Python
 holds that slot with a dummy record, so the other entries can be found.
 New entries can overwrite the dummy record.
 
-# Space & Time
+### Space & Time
 A dictionary trades off memory space against processing time.  By storing
 data sparesely, collisions are uncommon, making lookups fast on average.
 
@@ -294,10 +324,10 @@ Caching is another example where we can trade off space against time.  By
 allocating memory to caching, we avoid having to regenerate the output each
 time.
 
-# Sets
+### Sets
 A set is just a dictionary without storage for the values.
 
-# Examples
+### Examples
 ```python
 protocols = {
     'ftp': 21,
