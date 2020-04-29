@@ -4,8 +4,8 @@ Raymond Hettinger @raymondh
 ## When you see this, do that instead!
 
 - Replace traditional index manipulation with Python's core looping idioms
-- Learn advanced techniques with for-else clauses and the two argument for of iter()
-- Improve your craftmanship and aim for clean, fast, idiomatic Python code
+- Learn advanced techniques with for-else clauses and the two argument form of iter()
+- Improve your craftsmanship and aim for clean, fast, idiomatic Python code
 
 For each example, the last solution is the best.
 
@@ -104,6 +104,7 @@ for block in iter(partial(f.read, 32), ''):
 ```
 
 ## Distinguishing multiple exit points in loops
+The `for` loop has an `else` clause.
 ```python
 def find(seq, target):
     found = False
@@ -143,7 +144,7 @@ for k in d.keys():
         del d[k]
 ```
 
-## Looping over a dictionary keys and values
+## Looping over a dictionary's keys and values
 ```python
 for k in d:
     print k, '-->', d[k]
