@@ -23,13 +23,13 @@ The following is my transcript of the video linked above.
   - [Construct a dictionary from pairs](#construct-a-dictionary-from-pairs)
   - [Counting with dictionaries](#counting-with-dictionaries)
   - [Grouping with dictionaries](#grouping-with-dictionaries)
-  - [Is a dictionary popitem() atomic?](#is-a-dictionary-popitem-atomic)
+  - [Is a dictionary `popitem()` atomic?](#is-a-dictionary-popitem-atomic)
   - [Linking dictionaries](#linking-dictionaries)
 - [Improving Clarity](#improving-clarity)
   - [Clarify function calls with keyword arguments](#clarify-function-calls-with-keyword-arguments)
   - [Clarify multiple return values with named tuples](#clarify-multiple-return-values-with-named-tuples)
   - [Unpacking sequences](#unpacking-sequences)
-  - [Updating multiple state variable](#updating-multiple-state-variables)
+  - [Updating multiple state variables](#updating-multiple-state-variables)
 - [Tuple Packing & Unpacking](#tuple-packing--unpacking)
   - [Simultaneous state updates](#simultaneous-state-updates)
 - [Efficiency](#efficiency)
@@ -50,7 +50,7 @@ The following is my transcript of the video linked above.
 ## When you see this, do that instead!
 
 - Replace traditional index manipulation with Python's core looping idioms
-- Learn advanced techniques with for-else clauses and the two argument form of iter()
+- Learn advanced techniques with for-else clauses and the two argument form of `iter()`
 - Improve your craftsmanship and aim for clean, fast, idiomatic Python code
 
 For each example, the last solution is the best.
@@ -260,7 +260,7 @@ for name in names:
     d[key].append(name)
 ```
 
-## Is a dictionary popitem() atomic?
+## Is a dictionary `popitem()` atomic?
 ```python
 d = {'matthew': 'blue', 'rachel': 'green', 'raymond': 'red'}
 
