@@ -7,8 +7,7 @@ The following is my transcript of the video linked above.
 
 ---
 
-- [Transforming Code into Beautiful, Idiomatic Python](#transforming-code-into-beautiful-idiomatic-python)
-  - [When you see this, do that instead!](#when-you-see-this-do-that-instead)
+- [When you see this, do that instead!](#when-you-see-this-do-that-instead)
   - [Looping over a range of numbers](#looping-over-a-range-of-numbers)
   - [Looping over a collection](#looping-over-a-collection)
   - [Looping backwards](#looping-backwards)
@@ -55,7 +54,7 @@ The following is my transcript of the video linked above.
 
 For each example, the last solution is the best.
 
-## Looping over a range of numbers
+### Looping over a range of numbers
 ```python
 # This is a naive way to loop through a list of numbers.
 for i in [0, 1, 2, 3, 4, 5]:
@@ -70,7 +69,7 @@ for i in xrange(6):
     print i**2
 ```
 
-## Looping over a collection
+### Looping over a collection
 ```python
 colors = ['red', 'green', 'blue', 'yellow']
 
@@ -81,7 +80,7 @@ for color in colors:
     print color
 ```
 
-## Looping backwards
+### Looping backwards
 ```python
 colors = ['red', 'green', 'blue', 'yellow']
 
@@ -92,7 +91,7 @@ for color in reversed(colors):
     print color
 ```
 
-## Looping over a collection and indices
+### Looping over a collection and indices
 ```python
 colors = ['red', 'green', 'blue', 'yellow']
 
@@ -103,7 +102,7 @@ for i, color in enumerate(colors):
     print i, '-->', color
 ```
 
-## Looping over two collections
+### Looping over two collections
 ```python
 names = ['raymond', 'rachel', 'matthew']
 colors = ['red', 'green', 'blue', 'yellow']
@@ -121,7 +120,7 @@ for name, color in izip(names, colors):
     print name, '-->', color
 ```
 
-## Custom sort order
+### Custom sort order
 ```python
 colors = ['red', 'green', 'blue', 'yellow']
 
@@ -135,7 +134,7 @@ print sorted(colors, cmp=compare_length)
 print sorted(colors, key=len)
 ```
 
-## Call a function until a sentinel value
+### Call a function until a sentinel value
 ```python
 blocks = []
 while True:
@@ -149,7 +148,7 @@ for block in iter(partial(f.read, 32), ''):
     blocks.append(block)
 ```
 
-## Distinguishing multiple exit points in loops
+### Distinguishing multiple exit points in loops
 The `for` loop has an `else` clause.
 ```python
 def find(seq, target):
@@ -171,13 +170,13 @@ def find(seq, target):
     return i
 ```
 
-# Dictionary Skills
+## Dictionary Skills
 
 - Mastering dictionaries is a fundamental Python skill
 
 - They are a fundamental tool for expressing relationships, linking, counting, and grouping
 
-## Looping over dictionary keys
+### Looping over dictionary keys
 ```python
 d = {'matthew': 'blue', 'rachel': 'green', 'raymond': 'red'}
 
@@ -190,7 +189,7 @@ for k in d.keys():
         del d[k]
 ```
 
-## Looping over a dictionary's keys and values
+### Looping over a dictionary's keys and values
 ```python
 for k in d:
     print k, '-->', d[k]
@@ -203,7 +202,7 @@ for k, v in d.iteritems():
     print k, '-->', v
 ```
 
-## Construct a dictionary from pairs
+### Construct a dictionary from pairs
 ```python
 names = ['raymond', 'rachel', 'matthew']
 colors = ['red', 'green', 'blue', 'yellow']
@@ -214,7 +213,7 @@ d = dict(izip(names, colors))
 d = dict(enumerate(names))
 ```
 
-## Counting with dictionaries
+### Counting with dictionaries
 ```python
 colors = ['red', 'green', 'red', 'blue', 'green', 'red']
 
@@ -236,7 +235,7 @@ for color in colors:
     d[color] += 1
 ```
 
-## Grouping with dictionaries
+### Grouping with dictionaries
 ```python
 names = ['raymond', 'rachel', 'mathew', 'roger', 'betty', 'melissa', 'judith', 'charlie']
 
@@ -260,7 +259,7 @@ for name in names:
     d[key].append(name)
 ```
 
-## Is a dictionary `popitem()` atomic?
+### Is a dictionary `popitem()` atomic?
 ```python
 d = {'matthew': 'blue', 'rachel': 'green', 'raymond': 'red'}
 
@@ -269,7 +268,7 @@ while d:
     print key, '-->', value
 ```
 
-## Linking dictionaries
+### Linking dictionaries
 ```python
 defaults = {'color': red', 'user': 'guest'}
 parser = argparse.ArgumentParser()
@@ -285,21 +284,21 @@ d.update(command_line_args)
 d = ChainMap(command_line_args, os.environ, defaults)
 ```
 
-# Improving Clarity
+## Improving Clarity
 
 - Positional arguments and indices are nice
 - Keywords and names are better
 - The first way is convenient for the computer
 - The second corresponds to how humans think
 
-## Clarify function calls with keyword arguments
+### Clarify function calls with keyword arguments
 ```python
 twitter_search('@obama', False, 20, True)
 
 twitter_search('@obama', retweets=False, numtweets=20, popular=True)
 ```
 
-## Clarify multiple return values with named tuples
+### Clarify multiple return values with named tuples
 ```python
 doctest.testmod()
 # Used to return (0, 4)
@@ -310,7 +309,7 @@ doctest.testmod()
 TestResults = namedtuple('TestResults', ['failed', 'attempted'])
 ```
 
-## Unpacking sequences
+### Unpacking sequences
 ```python
 p = 'Raymond', 'Hettinger', 0x30, 'python@example.com'
 
@@ -322,7 +321,7 @@ email = p[3]
 fname, lname, age, email = p
 ```
 
-## Updating multiple state variables
+### Updating multiple state variables
 ```python
 def fibonacci(n):
     x = 0
@@ -340,12 +339,12 @@ def fibonacci(n):
         x, y = y, x+y
 ```
 
-# Tuple Packing & Unpacking
+## Tuple Packing & Unpacking
 - Don't undersestimate the advantages of updating state variables at the same time
 - It eliminates an entire class of errors due to out-of-order updates
 - It allows high level thinking: "chunking"
 
-## Simultaneous state updates
+### Simultaneous state updates
 ```python
 tmp_x = x + dx * t
 tmp_y = y + dy * t
@@ -362,12 +361,12 @@ x, y, dx, dy = (x + dx * t,
                 influence(m, x, y, dx, dy, partial='y'))
 ```
 
-# Efficiency
+## Efficiency
 - An optimization fundamental rule
 - Don't cause data to move around unnecessarily
 - It takes only a little care to avoid `O(n**2)` behavior instead of linear behavior
 
-## Concatenating strings
+### Concatenating strings
 ```python
 names = ['raymond', 'rachel', 'matthew', 'roger', 'betty', 'melissa', 'judith', 'charlie']
 
@@ -379,7 +378,7 @@ print s
 print ', '.join(names)
 ```
 
-## Updating sequences
+### Updating sequences
 ```python
 names = ['raymond', 'rachel', 'matthew', 'roger', 'betty', 'melissa', 'judith', 'charlie']
 
@@ -394,13 +393,13 @@ names.popleft(0)
 names.insertleft('mark')
 ```
 
-# Decorators & Context Managers
+## Decorators & Context Managers
 - Helps separate business logic from administrative logic
 - Clean, beautiful tools for factoring code and improving code reuse
 - Good naming is essential.
 - Remember the Spiderman rule: With great power, comes great responsibility!
 
-## Using Decorators to Factor Out Administrative Logic
+### Using Decorators to Factor Out Administrative Logic
 ```python
 def web_lookup(url, saved={}):
     if url in saved:
@@ -425,7 +424,7 @@ def cache(func):
     return newfunc
 ```
 
-## Factor out temporary contexts: precision
+### Factor out temporary contexts: precision
 ```python
 old_context = getcontext().copy()
 getcontext().prec = 50
@@ -436,7 +435,7 @@ with localcontext(Context(prec=50)):
     print Decimal(355) / Decimal(113)
 ```
 
-## How to open and close files
+### How to open and close files
 ```python
 f = open('data.txt')
 try:
@@ -448,7 +447,7 @@ with open('data.txt') as f:
     data = f.read()
 ```
 
-## How to use locks
+### How to use locks
 ```python
 # Make a lock
 lock = threading.Lock()
@@ -467,7 +466,7 @@ with lock:
     print 'Critical section 2'
 ```
 
-## Factor out temporary contexts: suppress
+### Factor out temporary contexts: suppress
 ```python
 try:
     os.remove('somefile.tmp')
@@ -491,7 +490,7 @@ with suppress(OSError)
     os.remove('foo.txt')
 ```
 
-## Factor out temporary contexts: stdout
+### Factor out temporary contexts: stdout
 ```python
 with open('help.txt', 'w') as f:
     oldstdout = sys.stdout
@@ -516,14 +515,14 @@ def redirect_stdout(fileobj):
     sys.stdout = oldstdout
 ```
 
-# Concise Expressive One Liners
+## Concise Expressive One Liners
 Two conflicting rules:
 1. Don't put too much on one line
 2. Don't break atoms of thought into subatomic particles
 
 Raymond's rule: One logical line of code equals one sentence in English.
 
-## List Comprehensions & Generator Expressions
+### List Comprehensions & Generator Expressions
 ```python
 result = []
 for i in range(10):
