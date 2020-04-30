@@ -1,5 +1,51 @@
 # Transforming Code into Beautiful, Idiomatic Python
-Raymond Hettinger @raymondh
+- YouTube: [Transforming Code into Beautiful, Idiomatic Python](https://youtu.be/OSGv2VnC0go)
+- Raymond Hettinger [@raymondh](https://twitter.com/raymondh)
+- March 20th, 2013
+
+The following is my transcript of the video linked above.
+
+---
+
+- [Transforming Code into Beautiful, Idiomatic Python](#transforming-code-into-beautiful-idiomatic-python)
+  - [When you see this, do that instead!](#when-you-see-this-do-that-instead)
+  - [Looping over a range of numbers](#looping-over-a-range-of-numbers)
+  - [Looping over a collection](#looping-over-a-collection)
+  - [Looping backwards](#looping-backwards)
+  - [Looping over a collection and indices](#looping-over-a-collection and indices)
+  - [Looping over two collections](#looping-over-two-collections)
+  - [Custom sort order](#custom-sort-order)
+  - [Call a function until a sentinel value](#call-a-function-until-a-sentinel-value)
+  - [Distinguishing multiple exit points in loops](#distinguishing-multiple-exit-points-in-loops)
+- [Dictionary Skills](#dictionary-skills)
+  - [Looping over dictionary keys](#looping-over-dictionary-keys)
+  - [Looping over a dictionary's keys and values](#looping-over-a-dictionarys-keys-and-values)
+  - [Construct a dictionary from pairs](#construct-a-dictionary-from-pairs))
+  - [Counting with dictionaries](#counting-with-dictionaries)
+  - [Grouping with dictionaries](#grouping-with-dictionaries)
+  - [Is a dictionary popitem() atomic?](#is-a-dictionary-popitem-atomic))
+  - [Linking dictionaries](#linking-dictionaries)
+- [Improving Clarity](#improving-clarity)
+  - [Clarify function calls with keyword arguments](#clarify-function-calls-with-keyword-arguments))
+  - [Clarify multiple return values with named tuples](#clarify-multiple-return-values-with-named-tuples)
+  - [Unpacking sequences](#unpacking-sequences)
+  - [Updating multiple state variable](#updating-multiple-state-variable)
+- [Tuple Packing & Unpacking](#tuple-packing--unpacking)
+  - [Simultaneous state updates](#simultaneous-state-updates)
+- [Efficiency](#efficiency)
+  - [Concatenating strings](#concatenating-strings)
+  - [Updating sequences](#updating-sequences)
+- [Decorators & Context Managers](#decorators-and-context-managers)
+  - [Using Decorators to Factor Out Administrative Logic](#using-decorators-to-factor-out-administrative-logic)
+  - [Factor out temporary contexts: precision](#factor-out-temporary-contexts-precision)
+  - [How to open and close files](#how-to-open-and-close-files)
+  - [How to use locks](#how-to-use-locks)
+  - [Factor out temporary contexts: suppress](#factor-out-temporary-contexts-suppress)
+  - [Factor out temporary contexts: stdout](#factor-out-temporary-contexts-stdout)
+- [Concise Expressive One Liners](#concise-expressive-one-liners)
+  - [List Comprehensions & Generator Expressions](#list-comprehensions--generator-expressions)
+
+---
 
 ## When you see this, do that instead!
 
@@ -294,7 +340,7 @@ def fibonacci(n):
         x, y = y, x+y
 ```
 
-# Tuple packing and unpacking
+# Tuple Packing & Unpacking
 - Don't undersestimate the advantages of updating state variables at the same time
 - It eliminates an entire class of errors due to out-of-order updates
 - It allows high level thinking: "chunking"
@@ -348,13 +394,13 @@ names.popleft(0)
 names.insertleft('mark')
 ```
 
-# Decorators and Context Managers
+# Decorators & Context Managers
 - Helps separate business logic from administrative logic
 - Clean, beautiful tools for factoring code and improving code reuse
 - Good naming is essential.
 - Remember the Spiderman rule: With great power, comes great responsibility!
 
-# Using decorators to factor out administrative logic
+## Using Decorators to Factor Out Administrative Logic
 ```python
 def web_lookup(url, saved={}):
     if url in saved:
@@ -379,7 +425,7 @@ def cache(func):
     return newfunc
 ```
 
-## Factor out temporary contexts
+## Factor out temporary contexts: precision
 ```python
 old_context = getcontext().copy()
 getcontext().prec = 50
@@ -421,7 +467,7 @@ with lock:
     print 'Critical section 2'
 ```
 
-# Factor out temporary contexts
+## Factor out temporary contexts: suppress
 ```python
 try:
     os.remove('somefile.tmp')
@@ -445,7 +491,7 @@ with suppress(OSError)
     os.remove('foo.txt')
 ```
 
-# Factor out temporary contexts
+## Factor out temporary contexts: stdout
 ```python
 with open('help.txt', 'w') as f:
     oldstdout = sys.stdout
@@ -477,7 +523,7 @@ Two conflicting rules:
 
 Raymond's rule: One logical line of code equals one sentence in English.
 
-# List Comprehensions and Generator Expressions
+## List Comprehensions & Generator Expressions
 ```python
 result = []
 for i in range(10):
