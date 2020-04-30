@@ -12,7 +12,7 @@ The following is my transcript of the video linked above.
   - [Looping over a range of numbers](#looping-over-a-range-of-numbers)
   - [Looping over a collection](#looping-over-a-collection)
   - [Looping backwards](#looping-backwards)
-  - [Looping over a collection and indices](#looping-over-a-collection and indices)
+  - [Looping over a collection and indices](#looping-over-a-collection-and-indices)
   - [Looping over two collections](#looping-over-two-collections)
   - [Custom sort order](#custom-sort-order)
   - [Call a function until a sentinel value](#call-a-function-until-a-sentinel-value)
@@ -20,22 +20,22 @@ The following is my transcript of the video linked above.
 - [Dictionary Skills](#dictionary-skills)
   - [Looping over dictionary keys](#looping-over-dictionary-keys)
   - [Looping over a dictionary's keys and values](#looping-over-a-dictionarys-keys-and-values)
-  - [Construct a dictionary from pairs](#construct-a-dictionary-from-pairs))
+  - [Construct a dictionary from pairs](#construct-a-dictionary-from-pairs)
   - [Counting with dictionaries](#counting-with-dictionaries)
   - [Grouping with dictionaries](#grouping-with-dictionaries)
-  - [Is a dictionary popitem() atomic?](#is-a-dictionary-popitem-atomic))
+  - [Is a dictionary popitem() atomic?](#is-a-dictionary-popitem-atomic)
   - [Linking dictionaries](#linking-dictionaries)
 - [Improving Clarity](#improving-clarity)
-  - [Clarify function calls with keyword arguments](#clarify-function-calls-with-keyword-arguments))
+  - [Clarify function calls with keyword arguments](#clarify-function-calls-with-keyword-arguments)
   - [Clarify multiple return values with named tuples](#clarify-multiple-return-values-with-named-tuples)
   - [Unpacking sequences](#unpacking-sequences)
-  - [Updating multiple state variable](#updating-multiple-state-variable)
+  - [Updating multiple state variable](#updating-multiple-state-variables)
 - [Tuple Packing & Unpacking](#tuple-packing--unpacking)
   - [Simultaneous state updates](#simultaneous-state-updates)
 - [Efficiency](#efficiency)
   - [Concatenating strings](#concatenating-strings)
   - [Updating sequences](#updating-sequences)
-- [Decorators & Context Managers](#decorators-and-context-managers)
+- [Decorators & Context Managers](#decorators--context-managers)
   - [Using Decorators to Factor Out Administrative Logic](#using-decorators-to-factor-out-administrative-logic)
   - [Factor out temporary contexts: precision](#factor-out-temporary-contexts-precision)
   - [How to open and close files](#how-to-open-and-close-files)
@@ -322,7 +322,7 @@ email = p[3]
 fname, lname, age, email = p
 ```
 
-## Updating multiple state variable
+## Updating multiple state variables
 ```python
 def fibonacci(n):
     x = 0
