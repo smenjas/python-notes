@@ -28,6 +28,7 @@ My notes on the [Python programming language](https://www.python.org/).
 - [Wikibooks: Python Programming](https://en.wikibooks.org/wiki/Python_Programming)
 - [The Quick Python Book](https://livebook.manning.com/book/the-quick-python-book-third-edition/about-this-book/)
 - [SICP in Python](https://wizardforcel.gitbooks.io/sicp-in-python/content/)
+- [Clean Code Python](https://github.com/zedr/clean-code-python)
 - [more books...](https://wiki.python.org/moin/PythonBooks)
 
 ### [No Starch Press](https://nostarch.com/catalog/python)
