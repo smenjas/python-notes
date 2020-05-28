@@ -29,6 +29,7 @@ My notes on the [Python programming language](https://www.python.org/).
 - [The Quick Python Book](https://livebook.manning.com/book/the-quick-python-book-third-edition/about-this-book/)
 - [SICP in Python](https://wizardforcel.gitbooks.io/sicp-in-python/content/)
 - [Clean Code Python](https://github.com/zedr/clean-code-python)
+- [How to Think Like a Computer Scientist](https://runestone.academy/runestone/books/published/thinkcspy/)
 - [more books...](https://wiki.python.org/moin/PythonBooks)
 
 ### [No Starch Press](https://nostarch.com/catalog/python)
