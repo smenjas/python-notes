@@ -70,6 +70,7 @@ My notes on the [Python programming language](https://www.python.org/).
 - [Your First Machine Learning Project in Python Step-By-Step](https://machinelearningmastery.com/machine-learning-in-python-step-by-step/)
 - [Problem Solving with Algorithms and Data Structures using Python](https://runestone.academy/runestone/books/published/pythonds/)
 - [Pythonic Data Structures and Algorithms](https://github.com/keon/algorithms)
+- [Practical Python Programming](https://dabeaz-course.github.io/practical-python/)
 
 ### [python.org](https://www.python.org/)
 - [Essays](https://www.python.org/doc/essays/)
