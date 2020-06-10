@@ -92,6 +92,7 @@ My notes on the [Python programming language](https://www.python.org/).
         - [typing — Support for type hints](https://docs.python.org/3/library/typing.html)
         - [unittest — Unit testing framework](https://docs.python.org/3/library/unittest.html)
       - [Debugging and Profiling](https://docs.python.org/3/library/debug.html)
+        - [pdb — The Python Debugger](https://docs.python.org/3/library/pdb.html)
       - [Software Packaging and Distribution](https://docs.python.org/3/library/distribution.html)
       - [Python Runtime Services](https://docs.python.org/3/library/python.html)
     - [Python HOWTOs](https://docs.python.org/3/howto/)
