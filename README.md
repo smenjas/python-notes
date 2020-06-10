@@ -71,6 +71,7 @@ My notes on the [Python programming language](https://www.python.org/).
 - [Problem Solving with Algorithms and Data Structures using Python](https://runestone.academy/runestone/books/published/pythonds/)
 - [Pythonic Data Structures and Algorithms](https://github.com/keon/algorithms)
 - [Practical Python Programming](https://dabeaz-course.github.io/practical-python/)
+- [Tutorials Point: Python 3](https://www.tutorialspoint.com/python3/)
 
 ### [python.org](https://www.python.org/)
 - [Essays](https://www.python.org/doc/essays/)
